@@ -1,6 +1,6 @@
 body {
    font-family: "Poppins", sans-serif;
-   background-color: #272044;;
+   background-color: #272044;
 }
 
 .container {
@@ -10,11 +10,15 @@ body {
 
 .img-responsive {
     max-width: 100%;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
     column-gap: 64px;
 }
 
@@ -26,17 +30,52 @@ body {
      grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-3columns {
+        grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background: white;
+    margin: 30px 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 0 30px 30px;
+}
+
+.btn {
+    display: block;
+    background-color: #462CB2;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px;
+}
+
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 100px;
+}
+
+section.secondary {
+background: #F8F8F8;
 }
 
 header {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('../images/bridge.png');
     background-repeat: no-repeat;
     background-size: cover;
-    color: azure;
+    color: white;
     text-align: center;
     padding: 200px 0;
 }
@@ -69,7 +108,7 @@ header a {
     line-height: 1.5;
     letter-spacing: 3px;
     text-align: center;
-    background: azure;
+    background:white;
     color: #272044;
     padding: 16px 32px;
     display: inline-block;
@@ -79,7 +118,7 @@ header a {
 }
 
 main {
-    background-color: azure;
+    background-color: white;
 
 }
 
@@ -101,6 +140,25 @@ main h3 {
     margin: 0;
 }
 
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+}
+
+
+
+
 main p {
     font-style: normal;
     font-weight: 400;
@@ -112,7 +170,7 @@ main p {
 
 
 footer {
-    color: azure;
+    color: white;
     background-image: linear-gradient(rgba(39,32,68,0.9), rgba(39,32,68,0.9)),url('../images/footer.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -142,7 +200,7 @@ footer li {
 }
 
 footer a {
-    color: azure;
+    color:white;
     opacity: 0.7;
 }
 
